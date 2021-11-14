@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,8 @@ import net.guides.springboot2.crud.exception.ResourceNotFoundException;
 import net.guides.springboot2.crud.model.Employee;
 import net.guides.springboot2.crud.repository.EmployeeRepository;
 
+//@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://ram-app-1.herokuapp.com/")
 @RestController
 @RequestMapping("/api/v1")
 public class EmployeeController {

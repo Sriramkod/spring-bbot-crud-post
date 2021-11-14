@@ -1,4 +1,5 @@
-package net.sriram.springbootpost.controller;
+package net.guides.springboot2.crud.controller;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,11 +17,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.sriram.springbootpost.exception.ResourceNotFoundException;
-import net.sriram.springbootpost.model.Employee;
-import net.sriram.springbootpost.repository.EmployeeRepository;
-
-
+import net.guides.springboot2.crud.exception.ResourceNotFoundException;
+import net.guides.springboot2.crud.model.Employee;
+import net.guides.springboot2.crud.repository.EmployeeRepository;
 
 @RestController
 @RequestMapping("/api/v1")
